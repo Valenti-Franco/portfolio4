@@ -52,10 +52,10 @@ const fadeIn = {
 };
 ---
 
-<Layout title=`${proyect.title}`>
+<Layout title=`${proyect?.title}`>
   <div class="containerMain">
-    <img src={proyect.logo} loading="lazy" class="imgfondo" alt="" />
-    <img src={proyect.logo} loading="lazy" class="imgfondo2" alt="" />
+    <img src={proyect?.logo} loading="lazy" class="imgfondo" alt="" />
+    <img src={proyect?.logo} loading="lazy" class="imgfondo2" alt="" />
 
     <section
       class="container flex justify-center items-center flex-col md:flex-row"
@@ -159,7 +159,7 @@ const fadeIn = {
         </div>
         <div class="w-full lg:w-1/2">
           {
-            proyect.imageWindow ? (
+            proyect?.imageWindow ? (
               <img src={proyect?.imageWindow} alt="" />
             ) : (
               <img src={proyect?.imagePhone} alt="" />

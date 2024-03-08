@@ -30,9 +30,9 @@
     animation-range: entry 25% cover 150%;
     animation-fill-mode: both;
 	padding: 5vw;
-	background: linear-gradient(124deg, rgba(0,0,0,1) 2%, rgba(172, 249, 255, 0.63) 11%, rgba(88,218,228,0.3090765449438202) 39%, rgba(17, 41, 43, 0.712) 56%, rgba(0,0,0,0.5955933988764045) 61%, rgba(0,0,0,0) 70%),
+	/* background: linear-gradient(124deg, rgba(0,0,0,1) 2%, rgba(172, 249, 255, 0.63) 11%, rgba(88,218,228,0.3090765449438202) 39%, rgba(17, 41, 43, 0.712) 56%, rgba(0,0,0,0.5955933988764045) 61%, rgba(0,0,0,0) 70%),
     url('../Portfolio/src/assets/Yo.png') right no-repeat;
-background-size: contain;
+background-size: contain; */
 
 
 }
