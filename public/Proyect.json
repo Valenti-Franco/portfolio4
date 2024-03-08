@@ -2,7 +2,7 @@
     "proyects": [
         {
             "id": 1,
-            "title": "FV Shoppay (2024)",
+            "title": "FV Shoppay",
             "imageWindow": "../../img/ecommerce.webp",
             "imagePhone": "",
             "link": "https://fv-shoppay.vercel.app/",
@@ -32,7 +32,7 @@
         },
         {
             "id": 2,
-            "title": "Futbol 5 Pa (2024)",
+            "title": "Futbol 5 Pa",
             "imageWindow": "",
             "imagePhone": "../../img/futbol1.webp",
             "link": "https://futbol5rosario.vercel.app/",
@@ -56,7 +56,7 @@
         },
         {
             "id": 3,
-            "title": "Interroga2 (2024)",
+            "title": "Interroga2",
             "imagePhone": "../../img/I2window.webp",
             "imageWindow": "",
             "link": "https://interroga2.vercel.app/",
@@ -80,7 +80,7 @@
         {
             "id": 4,
             "title": "NAVAJAFINA",
-            "type": "eCommerce (2023)",
+            "type": "eCommerce",
             "subtitle": "Productos de barbería",
             "logo": "../../img/nflogo.webp",
             "link": "https://navajafina.netlify.app/",
@@ -104,7 +104,7 @@
         {
             "id": 5,
             "title": "NoteHub",
-            "type": "Prueba Técnica (2024)",
+            "type": "Prueba Técnica",
             "subtitle": "Plataforma de Notas",
             "logo": "../../img/noteLogo.webp",
             "link": "https://note-hud.vercel.app/",
@@ -126,7 +126,7 @@
         {
             "id": 6,
             "title": "FV Argento REMAKE",
-            "type": "Sitio web deportivo (2023)",
+            "type": "Sitio web deportivo",
             "subtitle": "Futbol Argentino",
             "logo": "../../img/fv3d.webp",
             "link": "https://fv-futbol.vercel.app/",
@@ -152,7 +152,7 @@
             "imagePhone": "../../img/deliverPhone.webp",
             "link": "https://valenti-franco.github.io/delivertemplate/",
             "logo": "../../img/deliverLogo.webp",
-            "type": "Prueba Técnica (2024)",
+            "type": "Prueba Técnica",
             "subtitle": "P.Técnica para una empresa de delivery",
             "teclogies": [
                 "Gsap",
@@ -174,7 +174,7 @@
             "imageWindow": "",
             "link": "https://valenti-franco.github.io/CHAMPION_CLASH/",
             "logo": "../../img/ccLogo.webp",
-            "type": "Juego de Cartas (2023)",
+            "type": "Juego de Cartas",
             "subtitle": "Jugadores de Futbol",
             "teclogies": [
                 "React",
@@ -197,7 +197,7 @@
             "logo": "../../img/logoArg.webp",
             "imageWindow": "../../img/3dArg.webp",
             "link": "https://3-dweb-ten.vercel.app/",
-            "type": "Homenaje Argentino (2023)",
+            "type": "Homenaje Argentino",
             "subtitle": "Mundial Qatar 2022",
             "teclogies": [
                 "React",
@@ -220,7 +220,7 @@
             "imagePhone": "../../img/595shots_so.webp",
             "link": "https://fvhinchas.000webhostapp.com/",
             "logo": "../../img/fvlogo.webp",
-            "type": "Sitio web deportivo (2021)",
+            "type": "Sitio web deportivo",
             "subtitle": "Futbol Argentino",
             "teclogies": [
                 "Php",
