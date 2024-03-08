@@ -1,0 +1,334 @@
+---
+import { proyects } from "../../../public/Proyect.json";
+import Layout from "../../layouts/Layout.astro";
+import ReactIcon from "../../components/Icons/ReactIcon";
+import GsapSvg from "../../components/Icons/GsapSvg";
+import NetIcon from "../../components/Icons/NetIcon";
+import Paypal from "../../components/Icons/Paypal";
+import Api from "../../components/Icons/Api";
+import C from "../../components/Icons/C";
+import PhpIcon from "../../components/Icons/PhpIcon";
+import Js from "../../components/Icons/Js";
+import Mysql from "../../components/Icons/Mysql";
+import Socket from "../../components/Icons/Socket";
+import Mongo from "../../components/Icons/Mongo";
+import Css from "../../components/Icons/Css";
+import Next from "../../components/Icons/Next.jsx";
+import Google from "../../components/Icons/Google";
+import Three from "../../components/Icons/Three";
+import { slide } from "astro:transitions";
+
+// import { none } from "astro:transitions";
+
+export function getStaticPaths() {
+  return proyects.map((proyect) => ({
+    params: { id: proyect.id.toString() },
+  }));
+}
+const { id } = Astro.params;
+
+const proyect = proyects.find(
+  (proyect) => proyect.id === parseInt(id as string)
+);
+
+const FadeInAnimation = {
+  old: {
+    name: "", // same name as the keyframe in layouts/Main
+    duration: "",
+    easing: "",
+    fillMode: "",
+  },
+  new: {
+    name: "fadeIn",
+    duration: "0.7s",
+    easing: "linear",
+    fillMode: "backwards",
+  },
+};
+
+const fadeIn = {
+  forwards: FadeInAnimation,
+  backwards: FadeInAnimation,
+};
+---
+
+<Layout title=`${proyect.title}`>
+  <div class="containerMain">
+    <img src={proyect.logo} loading="lazy" class="imgfondo" alt="" />
+    <img src={proyect.logo} loading="lazy" class="imgfondo2" alt="" />
+
+    <section
+      class="container flex justify-center items-center flex-col md:flex-row"
+    >
+      <div class="imgContainer containerProyect">
+        <img
+          class="img"
+          transition:name=`image-${proyect?.logo}`
+          transition:animate={fadeIn}
+          src={proyect?.logo}
+          alt=""
+        />
+      </div>
+      <div class="containerTitle containerProyect">
+        <h3 transition:name=`title-${proyect?.title}`>
+          {proyect?.title}
+        </h3>
+      </div>
+    </section>
+    <section class="container flex justify-center items-center">
+      <div class="containerInfo containerProyect">
+        <h2
+          transition:animate={slide({
+            duration: "0.5s",
+          })}
+          class="font-extrabold uppercase text-4xl"
+        >
+          {proyect?.type}
+        </h2>
+      </div>
+    </section>
+    <section class="container flex justify-center items-center">
+      <div class="containerBody containerProyect lg:flex-row flex-col">
+        <div
+          transition:animate={fadeIn}
+          class="flex self-start flex-col w-full lg:w-1/2 p-4 lg:p-8  gap-8"
+        >
+          {
+            proyect?.page1.linkedin ? (
+              <iframe
+                class="w-full rounded-md self-center"
+                src={proyect?.page1.linkedin.link}
+                height={proyect?.page1.linkedin.heigth}
+                width={proyect?.page1.linkedin.width}
+                frameborder="0"
+                allowfullscreen=""
+                title={proyect.page1.linkedin.title}
+              />
+            ) : (
+              <>
+                <p
+                  transition:animate={slide({
+                    duration: "0.3s",
+                  })}
+                  class="text-2xl font-extrabold"
+                >
+                  {proyect?.page1?.title}
+                </p>
+                <p
+                  transition:animate={slide({
+                    duration: "0.5s",
+                  })}
+                  class="text-xl text-pretty"
+                >
+                  {proyect?.page1?.body.part1}
+                </p>
+                <p
+                  transition:animate={slide({
+                    duration: "0.8s",
+                  })}
+                  class="text-xl text-pretty"
+                >
+                  {proyect?.page1?.body.part2}
+                </p>
+              </>
+            )
+          }
+          <div class="cantainerSvg z-10">
+            {
+              proyect?.teclogies?.map((Technology, index) => (
+                <div class="iconContainer">
+                  {Technology === "Next" && <Next client:visible />}
+                  {Technology === "React" && <ReactIcon client:visible />}
+                  {Technology === "Gsap" && <GsapSvg client:visible />}
+                  {Technology === "Net" && <NetIcon client:visible />}
+                  {Technology === "Paypal" && <Paypal client:visible />}
+                  {Technology === "Api" && <Api client:visible />}
+                  {Technology === "C" && <C client:visible />}
+                  {Technology === "Php" && <PhpIcon client:visible />}
+                  {Technology === "Js" && <Js client:visible />}
+                  {Technology === "Mysql" && <Mysql client:visible />}
+                  {Technology === "Socket" && <Socket client:visible />}
+                  {Technology === "Mongo" && <Mongo client:visible />}
+                  {Technology === "Css" && <Css client:visible />}
+                  {Technology === "Google" && <Google client:visible />}
+                  {Technology === "Three" && <Three client:visible />}
+                </div>
+              ))
+            }
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2">
+          {
+            proyect.imageWindow ? (
+              <img src={proyect?.imageWindow} alt="" />
+            ) : (
+              <img src={proyect?.imagePhone} alt="" />
+            )
+          }
+
+          <img src={proyect?.page1?.image1} alt="" />
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <style>
+    .body {
+      background-color: red;
+    }
+    .img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+      filter: drop-shadow(0px 0px 1px #fff);
+    }
+    .imgfondo {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff63;
+      filter: blur(220px);
+    }
+    .imgfondo2 {
+      top: 0;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      filter: blur(500px) saturate(5.5);
+      transform: scale(1.5);
+    }
+
+    .imgHover {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 30%;
+      z-index: 100;
+    }
+    .containerBody {
+      display: flex;
+
+      min-height: 850px;
+      width: 100%;
+    }
+    .cantainerSvg {
+      width: 100%;
+      height: 60px;
+      display: flex;
+      left: 0;
+      padding: 8px 0;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      z-index: 12231233;
+      margin: 10px;
+    }
+
+    .cantainerSvg svg {
+      width: 50px;
+      height: 50px;
+    }
+    section {
+      z-index: 1000;
+      width: 100%;
+      gap: 10px;
+    }
+    .containerProyect {
+      color: #fff;
+      font-size: 24px;
+      border-radius: 10px;
+      background: #2727277a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+    .containerInfo {
+      display: flex;
+      flex-direction: column;
+      height: 150px;
+      width: 100%;
+    }
+    .containerTitle {
+      height: 200px;
+      width: 100%;
+    }
+    .imgContainer {
+      padding: 30px;
+
+      width: 40%;
+      height: 200px;
+    }
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+    .containerMain {
+      padding: 100px 30px;
+      gap: 10px;
+      width: 100%;
+      height: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 200px;
+      align-items: center;
+      justify-content: center;
+      background: rgb(0, 224, 255);
+      background: radial-gradient(
+        circle,
+        rgb(1, 31, 35) 42%,
+        rgba(33, 33, 33, 1) 95%
+      );
+    }
+
+    .containerMain h3 {
+      width: 100%;
+      height: 33%;
+      display: flex;
+      color: #fff;
+      text-align: center;
+
+      font-size: 54px;
+      font-style: normal;
+      font-weight: 800;
+      /* line-height: 110px; */
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 1400px) {
+      .containerGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+      }
+    }
+
+    @media screen and (max-width: 960px) {
+      .containerGrid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+      }
+    }
+    @media screen and (max-width: 560px) {
+      .containerGrid {
+        contain: content;
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .imgContainer {
+        width: 100%;
+      }
+      h3 {
+        font-size: 35px !important;
+      }
+      height: 2px; {
+        font-size: 30px !important;
+      }
+    }
+  </style>
+</Layout>

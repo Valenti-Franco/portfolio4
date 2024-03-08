@@ -1,0 +1,241 @@
+{
+    "proyects": [
+        {
+            "id": 1,
+            "title": "FV Shoppay (2024)",
+            "imageWindow": "../../img/ecommerce.webp",
+            "imagePhone": "",
+            "link": "https://fv-shoppay.vercel.app/",
+            "logo": "../../img/logo.webp",
+            "type": "Ecommerce",
+            "subtitle": "Productos Variados",
+            "teclogies": [
+                "Next",
+                "Net",
+                "Paypal",
+                "C"
+            ],
+            "page1": {
+                "linkedin": {
+                    "link": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7166519401591029760",
+                    "title": "FV Shoppay",
+                    "heigth": "934",
+                    "width": "504"
+                },
+                "title": "Ecommerce de productos variados, con sistema de pago y carrito de compras.",
+                "body": {
+                    "part1": "FV Shoppay es una plataforma de comercio electrónico que ofrece una experiencia de compra completa y satisfactoria. Con un diseño moderno y atractivo, los usuarios pueden registrarse o iniciar sesión utilizando su dirección de correo electrónico para acceder a su cuenta personalizada. Los administradores tienen una sección dedicada donde pueden crear, editar y gestionar productos, categorías y subcategorías, así como las especificaciones de tamaño, color y marca. La página principal del sitio web presenta una variedad de productos organizados de manera intuitiva y atractiva. Al hacer clic en un producto, los usuarios son redirigidos a una página individual que proporciona detalles específicos, como imágenes, descripción, precio y opciones de compra.",
+                    "part2": "Además, los usuarios pueden agregar productos a su carrito de compras y utilizar la función de búsqueda avanzada para explorar productos mediante filtros como tamaño, color, marca, categoría y precio. El proceso de pago es rápido y sencillo, con opciones de pago seguro, incluyendo PayPal. Los usuarios también tienen acceso a un perfil personal donde pueden ver su historial de compras, gestionar sus direcciones de envío y marcar productos como favoritos para futuras compras. Con todas estas características, FV Shoppay garantiza una experiencia de compra en línea conveniente y segura para sus usuarios."
+                },
+                "image1": "../../img/fvShoppay1.webp"
+            }
+        },
+        {
+            "id": 2,
+            "title": "Futbol 5 Pa (2024)",
+            "imageWindow": "",
+            "imagePhone": "../../img/futbol1.webp",
+            "link": "https://futbol5rosario.vercel.app/",
+            "logo": "../../img/logof5.webp",
+            "type": "Plataforma de Fútbol 5",
+            "subtitle": "Encontrá gente para jugar",
+            "teclogies": [
+                "Next",
+                "Socket",
+                "Google",
+                "Mongo"
+            ],
+            "page1": {
+                "title": "Plataforma Fútbol 5",
+                "body": {
+                    "part1": "Ofrece una experiencia única para los amantes del deporte rey. Con la capacidad de iniciar sesión fácilmente mediante Google, los usuarios pueden acceder rápidamente a la plataforma y buscar partidos de fútbol 5 en la vida real. Una vez dentro, tienen la posibilidad de elegir equipos y participar en emocionantes encuentros. Además, la plataforma ofrece una tabla anual donde los usuarios pueden seguir el desempeño de sus equipos y competir por el primer puesto.",
+                    "part2": "Todo esto es posible gracias a la tecnología detrás de la plataforma, desarrollada con Node.js, Next.js y MongoDB, garantizando un rendimiento óptimo y una experiencia fluida para los usuarios. Con Fútbol 5, encontrar compañeros de juego y disfrutar del fútbol 5 nunca ha sido tan fácil y divertido."
+                },
+                "image1": "../../img/futbol5Web.webp"
+            }
+        },
+        {
+            "id": 3,
+            "title": "Interroga2 (2024)",
+            "imagePhone": "../../img/I2window.webp",
+            "imageWindow": "",
+            "link": "https://interroga2.vercel.app/",
+            "logo": "../../img/logoP2.webp",
+            "type": "Juego Online (1vs1)",
+            "subtitle": "Preguntas y Respuestas",
+            "teclogies": [
+                "Next",
+                "Socket",
+                "Api"
+            ],
+            "page1": {
+                "title": "Juego de Preguntas Online",
+                "body": {
+                    "part1": "Interroga2 es mucho más que un simple juego de preguntas y respuestas en línea; es una experiencia social emocionante. Al unirte a este juego multijugador, no solo pondrás a prueba tus conocimientos, sino que también podrás conectarte con amigos y competir en tiempo real. Con preguntas que abarcan una amplia gama de temas y dificultades, nunca habrá un momento aburrido mientras juegas Interroga2. Además, su tecnología de vanguardia, basada en Next.js y WebSockets, asegura una jugabilidad fluida y sin interrupciones, proporcionando una experiencia de juego inigualable.",
+                    "part2": "En Interroga2, la diversión y el desafío van de la mano. Ya sea que estés buscando demostrar tu dominio en un tema específico o simplemente pasar un buen rato con amigos, este juego tiene algo para todos. Así que prepárate para sumergirte en una experiencia de trivia emocionante y competitiva, donde cada pregunta te acerca un paso más a la victoria."
+                },
+                "image1": "../../img/interroga21.webp"
+            }
+        },
+        {
+            "id": 4,
+            "title": "NAVAJAFINA",
+            "type": "eCommerce (2023)",
+            "subtitle": "Productos de barbería",
+            "logo": "../../img/nflogo.webp",
+            "link": "https://navajafina.netlify.app/",
+            "imagePhone": "../../img/navajaFina1.webp",
+            "imageWindow": "",
+            "teclogies": [
+                "React",
+                "Net",
+                "Paypal",
+                "C"
+            ],
+            "page1": {
+                "title": "Productos de barbería, con sistema de pago y carrito de compras.",
+                "body": {
+                    "part1": "NavajaFina es un sistema de comercio electrónico especializado en productos de barbería que destaca por su diseño cuidadoso y sus funcionalidades orientadas a la comodidad del usuario. A través de esta plataforma, los clientes pueden explorar y adquirir una amplia gama de productos relacionados con la barbería, desde herramientas de corte de alta calidad hasta productos de cuidado facial y capilar. La autenticación de usuarios se logra mediante un método seguro de autenticación por token JWT (JSON Web Tokens), asegurando un acceso seguro a las cuentas y una experiencia de compra conveniente. Una de las características más destacadas de NavajaFina es su sección de productos, donde los usuarios pueden examinar detalladamente las características de cada artículo, ver imágenes y puntuar el producto antes de realizar una compra.",
+                    "part2": "Además, la plataforma ofrece un proceso de compra flexible, permitiendo a los usuarios agregar productos a su carrito de compras y realizar el pago de forma individual o conjunta. Para garantizar la seguridad en las transacciones, NavajaFina incorpora un sistema de pago a través de PayPal, una plataforma reconocida por su fiabilidad. Los usuarios también tienen acceso a un perfil personalizado donde pueden gestionar su información personal, revisar su historial de pedidos y productos favoritos, mejorando así su experiencia de compra. Para los administradores, la plataforma proporciona herramientas eficientes de gestión de datos, permitiendo la administración de usuarios, productos, puntos de venta, categorías, subcategorías, imágenes y órdenes de compra. En resumen, NavajaFina ofrece una experiencia de compra en línea completa y satisfactoria tanto para los clientes como para los administradores."
+                },
+                "image1": "../../img/navajafinaPage1.webp"
+            }
+        },
+        {
+            "id": 5,
+            "title": "NoteHub",
+            "type": "Prueba Técnica (2024)",
+            "subtitle": "Plataforma de Notas",
+            "logo": "../../img/noteLogo.webp",
+            "link": "https://note-hud.vercel.app/",
+            "imagePhone": "../../img/notehub1.webp",
+            "imageWindow": "",
+            "teclogies": [
+                "Next",
+                "Css"
+            ],
+            "page1": {
+                "title": "NoteHUB: Juego de Preguntas Online",
+                "body": {
+                    "part1": "La página web NoteWorld ofrece una plataforma donde los usuarios pueden iniciar sesión y gestionar sus notas de manera eficiente. Con NoteWorld, puedes crear, editar y archivar tus notas según tus necesidades. Ya sea que estés tomando apuntes para una reunión importante o simplemente organizando tus pensamientos, nuestra plataforma te ofrece las herramientas necesarias para mantener tus notas organizadas y accesibles en todo momento. Con una interfaz intuitiva y funcionalidades de edición versátiles, NoteWorld se adapta a tu estilo de trabajo, permitiéndote concentrarte en lo que realmente importa: tus ideas.",
+                    "part2": "Además, NoteWorld garantiza la seguridad y privacidad de tus datos mediante un sistema de inicio de sesión seguro. Utilizando tecnologías modernas como JWT (JSON Web Tokens) para la autenticación, puedes confiar en que tus notas estarán protegidas mientras trabajas en la plataforma. Con NoteWorld, no solo obtienes un lugar conveniente para organizar tus pensamientos, sino también la tranquilidad de saber que tus datos están seguros y protegidos."
+                },
+                "image1": "../../img/notehubImage1.webp"
+            }
+        },
+        {
+            "id": 6,
+            "title": "FV Argento REMAKE",
+            "type": "Sitio web deportivo (2023)",
+            "subtitle": "Futbol Argentino",
+            "logo": "../../img/fv3d.webp",
+            "link": "https://fv-futbol.vercel.app/",
+            "imagePhone": "../../img/3dCnacha.webp",
+            "imageWindow": "",
+            "teclogies": [
+                "Next",
+                "Css"
+            ],
+            "page1": {
+                "title": "Plataforma Fútbol",
+                "body": {
+                    "part1": "Bienvenido a FV Argento REMAKE, la plataforma definitiva para los fanáticos del fútbol argentino. Con ocho equipos icónicos, incluyendo Newell's, Central, San Lorenzo, Boca, River, Racing, Independiente y Estudiantes, este proyecto está diseñado con React y Three.js para una experiencia visualmente impresionante.",
+                    "part2": "Explora las estadísticas de cada club y maravíllate con la representación en 3D de sus estadios. Sumérgete en el mundo del fútbol argentino como nunca antes, con FV Argento REMAKE, donde la pasión por el fútbol se une con la tecnología de vanguardia para una experiencia inolvidable."
+                },
+                "image1": "../../img/fvArgento1.webp"
+            }
+        },
+        {
+            "id": 7,
+            "title": "Deliver X",
+            "imageWindow": "",
+            "imagePhone": "../../img/deliverPhone.webp",
+            "link": "https://valenti-franco.github.io/delivertemplate/",
+            "logo": "../../img/deliverLogo.webp",
+            "type": "Prueba Técnica (2024)",
+            "subtitle": "P.Técnica para una empresa de delivery",
+            "teclogies": [
+                "Gsap",
+                "Css"
+            ],
+            "page1": {
+                "title": "Landing Page para Empresa de Entrega",
+                "body": {
+                    "part1": "Deliver X es una prueba técnica diseñada para una empresa de entrega, representando un desafío en el campo de la tecnología. Este proyecto, catalogado como una prueba técnica del año 2024, se enfoca en ofrecer soluciones innovadoras para mejorar los servicios de entrega. Utilizando tecnologías de vanguardia como Gsap y CSS, Deliver X busca destacarse por su experiencia visual y su capacidad para brindar una navegación fluida y atractiva a los usuarios.",
+                    "part2": "El proyecto se presenta como una oportunidad para demostrar habilidades técnicas y creativas en el ámbito del desarrollo web. A través de una cuidadosa implementación de Gsap y CSS, Deliver X busca no solo cumplir con los requisitos técnicos, sino también superar las expectativas y ofrecer una experiencia única que destaque en el competitivo mercado de las empresas de entrega."
+                },
+                "image1": "../../img/deliver1.webp"
+            }
+        },
+        {
+            "id": 8,
+            "title": "CHAMPION CLASH",
+            "imagePhone": "../../img/180shots_so.webp",
+            "imageWindow": "",
+            "link": "https://valenti-franco.github.io/CHAMPION_CLASH/",
+            "logo": "../../img/ccLogo.webp",
+            "type": "Juego de Cartas (2023)",
+            "subtitle": "Jugadores de Futbol",
+            "teclogies": [
+                "React",
+                "Api",
+                "Css"
+            ],
+            "page1": {
+                "title": "Juego de carta de Futbol",
+                "body": {
+                    "part1": "¡Bienvenido a Champion Clash, el juego de fútbol donde se encuentran la emoción y la estrategia! En esta épica confrontación, tendrás que tomar decisiones cruciales al elegir entre dos jugadores de fútbol de las ligas principales. Con tecnologías como React, API y CSS, Champion Clash ofrece una experiencia dinámica y envolvente para los aficionados al fútbol de todas partes. Sumérgete en el mundo del fútbol y demuestra tus habilidades estratégicas mientras enfrentas a tus jugadores favoritos en una batalla épica por la supremacía.",
+                    "part2": "Champion Clash, catalogado como un juego de cartas del año 2023, presenta una oportunidad emocionante para los amantes del deporte rey. Con gráficos impresionantes y una jugabilidad adictiva, este juego te desafía a seleccionar a los jugadores más habilidosos y construir tu equipo definitivo. ¿Estás listo para enfrentarte a los mejores y convertirte en el campeón supremo? ¡Únete a Champion Clash y lleva tu pasión por el fútbol al siguiente nivel!"
+                },
+                "image1": "../../img/cc1.webp"
+            }
+        },
+        {
+            "id": 9,
+            "title": "#FrancoArg3D",
+            "imagePhone": "",
+            "logo": "../../img/logoArg.webp",
+            "imageWindow": "../../img/3dArg.webp",
+            "link": "https://3-dweb-ten.vercel.app/",
+            "type": "Homenaje Argentino (2023)",
+            "subtitle": "Mundial Qatar 2022",
+            "teclogies": [
+                "React",
+                "Three",
+                "Css"
+            ],
+            "page1": {
+                "title": "Homenaje Argentino al Mundial de Qatar 2022",
+                "body": {
+                    "part1": "#FrancoArg3D es un homenaje argentino al Mundial de Qatar 2022, presentado en una emocionante experiencia en 3D. Esta página, creada con tecnologías como React, Three y CSS, te sumerge en un mundo tridimensional donde puedes explorar diferentes cuartos diseñados desde cero en Blender por su creador. Desde los rincones más emblemáticos hasta los detalles más minuciosos, cada aspecto de esta experiencia ha sido cuidadosamente elaborado para ofrecerte una experiencia inmersiva única. Además del impresionante entorno en 3D, #FrancoArg3D también rinde un pequeño tributo a Argentina, el equipo campeón, en esta emocionante celebración del fútbol.",
+                    "part2": "No te pierdas esta oportunidad de sumergirte en la pasión y el orgullo argentino por el fútbol en un mundo virtual impresionante. Únete a #FrancoArg3D y explora cada rincón de esta experiencia en 3D, donde el Mundial de Qatar 2022 cobra vida de una manera nunca antes vista. Con tecnología de vanguardia y un diseño meticuloso, esta página te ofrece una experiencia inmersiva que no querrás perderte."
+                },
+                "image1": "../../img/Arg3d1.webp"
+            }
+        },
+        {
+            "id": 10,
+            "title": "FV Argento",
+            "imageWindow": "",
+            "imagePhone": "../../img/595shots_so.webp",
+            "link": "https://fvhinchas.000webhostapp.com/",
+            "logo": "../../img/fvlogo.webp",
+            "type": "Sitio web deportivo (2021)",
+            "subtitle": "Futbol Argentino",
+            "teclogies": [
+                "Php",
+                "Mysql",
+                "Js",
+                "Three"
+            ],
+            "page1": {
+                "title": "Plataforma Fútbol Argentino",
+                "body": {
+                    "part1": "FV Argento es mucho más que un simple sitio web deportivo: es un centro de información y comunidad para los aficionados al fútbol argentino. Con tecnologías como Php, Mysql, Js y Three, este proyecto ofrece una plataforma interactiva donde los seguidores pueden sumergirse en noticias, estadísticas y contenido relacionado con sus equipos favoritos. Desde las últimas novedades hasta datos históricos, FV Argento proporciona una experiencia completa para aquellos que viven y respiran el fútbol argentino.",
+                    "part2": "Además, FV Argento cuenta con un robusto sistema de usuarios desarrollado con Php y Mysql, permitiendo a los visitantes registrarse, iniciar sesión y personalizar su experiencia en el sitio. Ya sea para seguir de cerca los resultados de los partidos, participar en debates o simplemente estar al día con las últimas noticias, FV Argento es el destino definitivo para los apasionados del fútbol argentino que buscan estar siempre conectados con su pasión."
+                },
+                "image1": "../../img/fv1.webp"
+            }
+        }
+    ]
+}

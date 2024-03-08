@@ -1,0 +1,81 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import Header from "../components/Header.astro";
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <Header />
+
+    <slot />
+    <style is:global>
+      :root {
+      }
+      html {
+        font-family: system-ui, sans-serif;
+        /* scroll-behavior: smooth; */
+      }
+      body {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 250px;
+        margin: 0;
+        padding: 0;
+        background: #222;
+      }
+      @keyframes fadeIn {
+        from {
+          animation-duration: 10s;
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes bounce {
+        from,
+        20%,
+        53%,
+        to {
+          animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          transform: translate3d(0, 0, 0);
+        }
+
+        40%,
+        43% {
+          animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+          transform: translate3d(0, -30px, 0) scaleY(1.1);
+        }
+
+        70% {
+          animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+          transform: translate3d(0, -15px, 0) scaleY(1.05);
+        }
+
+        80% {
+          transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          transform: translate3d(0, 0, 0) scaleY(0.95);
+        }
+
+        90% {
+          transform: translate3d(0, -4px, 0) scaleY(1.02);
+        }
+      }
+    </style>
+  </body>
+</html>

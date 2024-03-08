@@ -1,0 +1,73 @@
+---
+const { logo, title, type, subtitle, id } = Astro.props;
+---
+
+<div transition:name=`proyect-${id}` class="fullcontainer">
+  <div class="containerImg">
+    <img
+      transition:name=`image-${logo}`
+      loading="lazy"
+      class="img"
+      src={logo}
+      alt=""
+    />
+  </div>
+  <div class="containerText">
+    <h3 transition:name=`title-${title}`>{title}</h3>
+    <div>
+      <p>{type}</p>
+      <p>{subtitle}</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .fullcontainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  .containerImg {
+    display: flex;
+
+    z-index: 1000;
+    position: absolute;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    filter: drop-shadow(1px 0px 1px white);
+  }
+
+  .containerText {
+    z-index: 100000;
+    position: relative;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    padding-right: 15%;
+    padding-bottom: 4em;
+    padding-left: 15%;
+    align-self: flex-end;
+  }
+
+  .containerText p {
+    margin: 0;
+    text-transform: capitalize;
+  }
+
+  @media screen and (max-width: 560px) {
+    .containerCard {
+      width: 100%;
+      padding: 0;
+      border-radius: 0px;
+    }
+  }
+</style>

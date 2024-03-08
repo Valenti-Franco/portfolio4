@@ -1,0 +1,106 @@
+---
+import Card2 from "./Card2.jsx";
+
+import { proyects } from "../../public/Proyect.json";
+import ContentCard from "./ContentCard.astro";
+---
+
+<div id="proyects" class="containerMain">
+  <h2 class="m-8">MIS PROYECTOS</h2>
+  <div class="containerGrid">
+    {
+      Array.isArray(proyects) &&
+        proyects.map((proyect) => (
+          <a class="containerCard" href={`/Proyect/${proyect.id}`}>
+            <Card2
+              client:visible
+              id={proyect.id}
+              title={proyect.title}
+              imageWindow={proyect.imageWindow}
+              imagePhone={proyect.imagePhone}
+              link={proyect.link}
+              logo={proyect.logo}
+              type={proyect.type}
+              subtitle={proyect.subtitle}
+              teclogies={proyect.teclogies}
+            >
+              <ContentCard
+                id={proyect.id}
+                title={proyect.title}
+                subtitle={proyect.subtitle}
+                type={proyect.type}
+                logo={proyect.logo}
+              />
+            </Card2>
+          </a>
+        ))
+    }
+  </div>
+</div>
+
+<style>
+  .containerCard {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    z-index: 100;
+  }
+  .containerMain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    padding: 100px 0px;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 224, 255);
+    background: radial-gradient(
+      circle,
+      rgba(0, 224, 255, 0.4598214285714286) 42%,
+      rgba(33, 33, 33, 1) 95%
+    );
+  }
+
+  .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  .containerMain h2 {
+    width: 100%;
+    height: 33%;
+    display: flex;
+    color: #fff;
+    text-align: center;
+
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    /* line-height: 110px; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 1400px) {
+    .containerGrid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    .containerGrid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+    }
+  }
+  @media screen and (max-width: 560px) {
+    .containerGrid {
+      contain: content;
+      width: 100%;
+    }
+  }
+</style>

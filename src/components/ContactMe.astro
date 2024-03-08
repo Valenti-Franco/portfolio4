@@ -1,0 +1,325 @@
+---
+import { Toaster, toast } from "sonner";
+import Form from "./Form.jsx";
+---
+
+<main id="contact" class="container3">
+  <div class="container1">
+    <div class="containerContact">
+      <section>
+        <h2>CONTACTO</h2>
+        <ul>
+          <li>
+            <strong>Email</strong>
+            <p class="email">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-mail"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-Width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-Linecap="round"
+                stroke-Linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
+                ></path>
+                <path d="M3 7l9 6l9 -6"></path>
+              </svg>
+              valentifranco23@gmail.com
+            </p>{" "}
+          </li>
+          <li>
+            <strong>Linkedin:</strong>
+            <p>
+              <a href="https://www.linkedin.com/in/franco-valenti-57b643246/">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-linkedin"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-Width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-Linecap="round"
+                  stroke-Linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+                  ></path>
+                  <path d="M8 11l0 5"></path>
+                  <path d="M8 8l0 .01"></path>
+                  <path d="M12 16l0 -5"></path>
+                  <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+                </svg>
+                A traves de Linkedin
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-external-link"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-Width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-Linecap="round"
+                  stroke-Linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"
+                  ></path>
+                  <path d="M11 13l9 -9"></path>
+                  <path d="M15 4h5v5"></path>
+                </svg>
+              </a>
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <Form client:visible />
+    </div>
+  </div>
+</main>
+
+<style>
+  .container3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 224, 255);
+    background: radial-gradient(
+      circle,
+      rgba(0, 224, 255, 0.4598214285714286) 42%,
+      rgba(33, 33, 33, 1) 95%
+    );
+  }
+  .container3 h2 {
+    width: 100%;
+    height: 33%;
+    display: flex;
+    color: #fff;
+    text-align: center;
+
+    font-size: 54px;
+    margin: 30px 0;
+    font-style: normal;
+    font-weight: 800;
+    /* line-height: 110px; */
+    align-items: center;
+    justify-content: start;
+    margin-left: 100px;
+  }
+  .main {
+    /* background-color: #222; */
+    height: 100vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Josefin Sans", sans-serif;
+    contain: content;
+    margin: 50px;
+  }
+  .main h2 {
+    color: #1acae9;
+    font-size: 60px;
+    text-align: start;
+  }
+  .container1 {
+    width: 90%;
+    height: 90%;
+    /* background: #333; */
+    background: #252525d0;
+    contain: content;
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .main h3 {
+    font-size: 32px;
+    border-bottom: 5px solid;
+  }
+
+  .containerContact ul li {
+    /* color: #a05eee; */
+  }
+  .containerContact ul li strong {
+    color: #53a2b0;
+    display: block;
+    width: auto;
+    font-size: 25px;
+    border-bottom: #1acae9 2px solid;
+  }
+  .containerContact ul li p {
+    font-size: 25px;
+  }
+  .containerContact ul li p a,
+  .email {
+    color: #1acae9;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 25px;
+    /* background: #072b32;; */
+    padding: 0 10px;
+    border-top: 0;
+    /* border: 2px solid; */
+    border-radius: 0px 0px 10px 10px;
+  }
+  .email {
+    margin: 0;
+    padding: 20px 10px;
+  }
+  .containerContact ul li p a {
+    padding: 20px 10px;
+  }
+  .containerContact ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 100%;
+    font-size: 20px;
+    /* background: #333; */
+    list-style: none;
+    align-items: start;
+    padding: 0;
+    margin-left: 100px;
+  }
+  .containerContact section {
+    width: 50%;
+    padding: 10px;
+
+    margin: 0px 0px;
+  }
+  .containerContact {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 25px;
+  }
+
+  .form input {
+    margin: 5px;
+    border-radius: 5px;
+    height: 25px;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .coantainerForm {
+    width: 50%;
+    padding: 10px;
+  }
+  .form label {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .form label {
+    color: #53a2b0;
+  }
+  .form textarea {
+    resize: none;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .coantainerForm strong {
+    color: #53a2b0;
+    display: block;
+    width: auto;
+    font-size: 25px;
+    border-bottom: #1acae9 2px solid;
+  }
+  .form button {
+    width: fit-content;
+    align-self: center;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Josefin Sans";
+    background: #53a2b0;
+    color: #fff;
+    border: none;
+  }
+
+  @media screen and (max-width: 1600px) {
+    /* Estilos para pantallas entre 1281px y 1600px */
+    .containerContact {
+      flex-direction: column;
+    }
+    .container3 h2 {
+      margin: auto;
+      align-items: center;
+      justify-content: center;
+    }
+    .containerContact ul {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      height: 100%;
+      font-size: 20px;
+      margin: auto;
+      list-style: none;
+      align-items: center;
+      padding: 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .main {
+      height: auto;
+    }
+    .container1 {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1280px) {
+    .main {
+      width: 100vw;
+    }
+    .containerContact section {
+      width: 100%;
+    }
+
+    /* Estilos para tabletas en modo paisaje */
+  }
+  @media screen and (max-width: 767px) {
+    /* Estilos para dispositivos móviles de tamaño mediano (por ejemplo, teléfonos) */
+    .containerContact ul li p {
+      font-size: 15px;
+    }
+    .containerContact ul li p a {
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 374px) {
+    /* Estilos para dispositivos móviles pequeños (por ejemplo, teléfonos más pequeños) */
+  }
+</style>

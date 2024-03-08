@@ -1,0 +1,31 @@
+.container{
+    position: relative;
+    z-index: 19999;
+    width: 50px;
+    contain: content;
+    text-wrap: nowrap;
+    display: flex;
+    margin: 0;
+}
+
+.Text{
+    position: absolute;
+    filter: drop-shadow(0px 0px 2px black);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0px;
+    margin: auto;
+    font-size: 12px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    /* height: 90%; */
+    /* border-radius: 50%; */
+    /* border: 2px solid rgba(255, 255, 255, 0.303); */
+    
+}
