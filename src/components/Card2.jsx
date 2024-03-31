@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import ContentCard from "./ContentCard.astro";
 import style from "./card.module.css";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, color, motion } from "framer-motion";
 import ReactIcon from "./Icons/ReactIcon";
 import GsapSvg from "./Icons/GsapSvg";
 import NetIcon from "./Icons/NetIcon";
@@ -17,12 +17,13 @@ import Css from "./Icons/Css";
 import Next from "./Icons/Next.jsx";
 import Google from "./Icons/Google";
 import Three from "./Icons/Three";
+import Angular from "./Icons/Angualar";
 
 const Card2 = ({
   children,
   id,
   title,
-
+  isNew,
   type,
   link,
   imageWindow,
@@ -44,11 +45,29 @@ const Card2 = ({
   return (
     <>
       <div
-        className={`${style.containerCard} `}
+        className={`${style.containerCard} ${
+          isNew && " border-purple-900 border-2 "
+        }`}
         onMouseEnter={() => handleMouseEnter()}
         onMouseLeave={handleMouseLeave}
       >
         <AnimatePresence>
+          {isNew && isHovered && (
+            <motion.div
+              className="p-2 bg-cover     border-l-0   flex w-max absolute top-5 left-0 rounded-r-lg   justify-start"
+              initial={{ opacity: 0, x: "-200px" }}
+              animate={{
+                opacity: 1,
+                x: "0px",
+
+                borderLeft: "0px",
+              }}
+              exit={{ opacity: 0, x: "-200px" }}
+              transition={{ duration: 0.4 }}
+            >
+              <p style={{ color: "#dd98fe" }}>NEW</p>
+            </motion.div>
+          )}
           {isHovered && (
             <motion.div
               className={style.containerShow}
@@ -276,6 +295,7 @@ const Card2 = ({
               {Technology === "Css" && <Css />}
               {Technology === "Google" && <Google />}
               {Technology === "Three" && <Three />}
+              {Technology === "Angular" && <Angular />}
             </div>
           ))}
         </div>

@@ -1,7 +1,34 @@
 {
     "proyects": [
         {
+            "id": 10,
+            "isNew": true,
+            "title": "FVSocial",
+            "imageWindow": "../../img/fvsocialWindow.webp",
+            "imagePhone": "",
+            "link": "https://fvsocial.vercel.app/",
+            "logo": "../../img/LogoOficial.webp",
+            "type": "Red Social",
+            "subtitle": "Clon Twitter",
+            "teclogies": [
+                "Angular",
+                "Socket",
+                "Net",
+                "C"
+            ],
+            "github": "https://github.com/Valenti-Franco/FVSocial",
+            "page1": {
+                "title": "Es una Red Social inspirada por Twitter",
+                "body": {
+                    "part1": "FVSocial es una red social que ofrece al usuario la posibilidad de crear Post con un diseño moderno y atractivo, los usuarios pueden registrarse o iniciar sesión utilizando su dirección de correo electrónico o utilizando Google para acceder a su cuenta.",
+                    "part2": "Los Usuarios puede Seguir a otros Usuarios, Likear y comentar Post, puede personalizar su perfil y chatear en tiempo real"
+                },
+                "image1": "../../img/fvsocialMovil.webp"
+            }
+        },
+        {
             "id": 1,
+            "isNew": true,
             "title": "FV Shoppay",
             "imageWindow": "../../img/ecommerce.webp",
             "imagePhone": "",
@@ -33,6 +60,7 @@
         },
         {
             "id": 2,
+            "isNew": false,
             "title": "Futbol 5 Pa",
             "imageWindow": "",
             "imagePhone": "../../img/futbol1.webp",
@@ -58,6 +86,7 @@
         },
         {
             "id": 3,
+            "isNew": false,
             "title": "Interroga2",
             "imagePhone": "../../img/I2window.webp",
             "imageWindow": "",
@@ -82,6 +111,7 @@
         },
         {
             "id": 4,
+            "isNew": false,
             "title": "NAVAJAFINA",
             "type": "eCommerce",
             "subtitle": "Productos de barbería",
@@ -107,6 +137,7 @@
         },
         {
             "id": 5,
+            "isNew": false,
             "title": "NoteHub",
             "type": "Prueba Técnica",
             "subtitle": "Plataforma de Notas",
@@ -130,6 +161,7 @@
         },
         {
             "id": 6,
+            "isNew": false,
             "title": "FV Argento REMAKE",
             "type": "Sitio web deportivo",
             "subtitle": "Futbol Argentino",
@@ -153,6 +185,7 @@
         },
         {
             "id": 7,
+            "isNew": false,
             "title": "Deliver X",
             "imageWindow": "",
             "imagePhone": "../../img/deliverPhone.webp",
@@ -176,6 +209,7 @@
         },
         {
             "id": 8,
+            "isNew": false,
             "title": "CHAMPION CLASH",
             "imagePhone": "../../img/180shots_so.webp",
             "imageWindow": "",
@@ -200,6 +234,7 @@
         },
         {
             "id": 9,
+            "isNew": false,
             "title": "#FrancoArg3D",
             "imagePhone": "",
             "logo": "../../img/logoArg.webp",
@@ -220,31 +255,6 @@
                     "part2": "No te pierdas esta oportunidad de sumergirte en la pasión y el orgullo argentino por el fútbol en un mundo virtual impresionante. Únete a #FrancoArg3D y explora cada rincón de esta experiencia en 3D, donde el Mundial de Qatar 2022 cobra vida de una manera nunca antes vista. Con tecnología de vanguardia y un diseño meticuloso, esta página te ofrece una experiencia inmersiva que no querrás perderte."
                 },
                 "image1": "../../img/Arg3d1.webp"
-            }
-        },
-        {
-            "id": 10,
-            "title": "FV Argento",
-            "imageWindow": "",
-            "imagePhone": "../../img/595shots_so.webp",
-            "link": "https://fvhinchas.000webhostapp.com/",
-            "logo": "../../img/fvlogo.webp",
-            "type": "Sitio web deportivo",
-            "subtitle": "Futbol Argentino",
-            "teclogies": [
-                "Php",
-                "Mysql",
-                "Js",
-                "Three"
-            ],
-            "github": "",
-            "page1": {
-                "title": "Plataforma Fútbol Argentino",
-                "body": {
-                    "part1": "FV Argento es mucho más que un simple sitio web deportivo: es un centro de información y comunidad para los aficionados al fútbol argentino. Con tecnologías como Php, Mysql, Js y Three, este proyecto ofrece una plataforma interactiva donde los seguidores pueden sumergirse en noticias, estadísticas y contenido relacionado con sus equipos favoritos. Desde las últimas novedades hasta datos históricos, FV Argento proporciona una experiencia completa para aquellos que viven y respiran el fútbol argentino.",
-                    "part2": "Además, FV Argento cuenta con un robusto sistema de usuarios desarrollado con Php y Mysql, permitiendo a los visitantes registrarse, iniciar sesión y personalizar su experiencia en el sitio. Ya sea para seguir de cerca los resultados de los partidos, participar en debates o simplemente estar al día con las últimas noticias, FV Argento es el destino definitivo para los apasionados del fútbol argentino que buscan estar siempre conectados con su pasión."
-                },
-                "image1": "../../img/fv1.webp"
             }
         }
     ]

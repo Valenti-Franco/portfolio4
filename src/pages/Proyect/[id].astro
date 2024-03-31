@@ -16,6 +16,7 @@ import Css from "../../components/Icons/Css";
 import Next from "../../components/Icons/Next.jsx";
 import Google from "../../components/Icons/Google";
 import Three from "../../components/Icons/Three";
+import Angular from "../../components/Icons/Angualar";
 import { slide } from "astro:transitions";
 import ButtonMain from "../../components/ButtonMain.astro";
 
@@ -155,6 +156,8 @@ const fadeIn = {
                   {Technology === "Css" && <Css client:visible />}
                   {Technology === "Google" && <Google client:visible />}
                   {Technology === "Three" && <Three client:visible />}
+                  {Technology === "Angular" && <Angular client:visible />}
+
                 </div>
               ))
             }

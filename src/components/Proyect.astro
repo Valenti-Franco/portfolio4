@@ -13,6 +13,7 @@ import ContentCard from "./ContentCard.astro";
         proyects.map((proyect) => (
           <a class="containerCard" href={`/Proyect/${proyect.id}`}>
             <Card2
+              isNew={proyect.isNew}
               client:visible
               id={proyect.id}
               title={proyect.title}
