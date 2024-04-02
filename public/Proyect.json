@@ -18,6 +18,12 @@
             ],
             "github": "https://github.com/Valenti-Franco/FVSocial",
             "page1": {
+                "linkedin": {
+                    "link": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7180924721021001728",
+                    "title": "FVSocial",
+                    "heigth": "934",
+                    "width": "504"
+                },
                 "title": "Es una Red Social inspirada por Twitter",
                 "body": {
                     "part1": "FVSocial es una red social que ofrece al usuario la posibilidad de crear Post con un diseño moderno y atractivo, los usuarios pueden registrarse o iniciar sesión utilizando su dirección de correo electrónico o utilizando Google para acceder a su cuenta.",
