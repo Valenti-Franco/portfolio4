@@ -42,9 +42,19 @@ const Card2 = ({
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
+  useEffect(() => {
+    // console.log("hola");
+    const windowWidth = window.innerWidth;
+    if (windowWidth < 1300) {
+      setIsHovered(true);
+    }
+  }, []);
+
   return (
     <>
-      <div
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         className={`${style.containerCard} ${
           isNew && " border-purple-900 border-2 "
         }`}
@@ -299,7 +309,7 @@ const Card2 = ({
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
