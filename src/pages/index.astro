@@ -9,14 +9,23 @@ import ContacMe from "../components/ContactMe.astro";
 
 <Layout title="Franco Valenti | FullStack Developer">
   <main class="mt-28 md:mt-0">
-    <PageMain />
-    <div class="w-full h-2 bg-black-900 bg-opacity-90"></div>
+    <div class="relative">
+      <!-- <div class="skewed"></div> -->
+      <PageMain />
+    </div>
+    <div class="relative">
+      <Proyect />
+      <div class="hidden md:block skewed skewed2 color1"></div>
 
-    <Proyect />
-    <div class="w-full h-2 bg-black-900 bg-opacity-90"></div>
+      <div class="hidden md:block skewed color1"></div>
+    </div>
 
-    <AboutMe />
-    <div class="w-full h-2 bg-black-900 bg-opacity-90"></div>
+    <div class="relative">
+      <AboutMe />
+      <div class="hidden md:block skewed skewed2 color2"></div>
+
+      <div class="hidden md:block skewed color2"></div>
+    </div>
 
     <ContacMe />
   </main>
@@ -28,5 +37,39 @@ import ContacMe from "../components/ContactMe.astro";
     display: flex;
     justify-content: center;
     flex-direction: column;
+  }
+  .skewed {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 8vh;
+    z-index: 1;
+    transform: skewY(2deg);
+    transform-origin: top right;
+  }
+  .skewed2 {
+    z-index: 10;
+    background: #fff;
+    top: -1.5%;
+    height: 2vh;
+  }
+  .color1 {
+    background: rgb(0, 224, 255);
+    background: radial-gradient(
+      circle,
+      rgb(3, 83, 94) 42%,
+      rgba(33, 33, 33, 1) 95%
+    );
+  }
+  .color2 {
+    background: rgb(0, 224, 255);
+    background: radial-gradient(
+      circle,
+      rgb(0, 0, 0) 42%,
+      rgba(33, 33, 33, 1) 95%
+    );
   }
 </style>
