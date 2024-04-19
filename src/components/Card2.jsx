@@ -18,6 +18,9 @@ import Next from "./Icons/Next.jsx";
 import Google from "./Icons/Google";
 import Three from "./Icons/Three";
 import Angular from "./Icons/Angualar";
+import DotPattern from "./Dot-pattern.tsx";
+import { cn } from "../lib/utils.ts";
+import { BorderBeam } from "./Border-beam.tsx";
 
 const Card2 = ({
   children,
@@ -55,28 +58,35 @@ const Card2 = ({
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        className={`${style.containerCard} ${
-          isNew && " border-purple-900 border-2 "
-        }`}
+        className={style.containerCard}
         onMouseEnter={() => handleMouseEnter()}
         onMouseLeave={handleMouseLeave}
       >
+        {isNew && <BorderBeam size={2030} duration={20} delay={1} />}
+
+        <DotPattern
+          className={cn(
+            "[mask-image:radial-gradient(200px_circle_at_center,white,transparent)]"
+          )}
+        />
         <AnimatePresence>
           {isNew && isHovered && (
-            <motion.div
-              className="p-2 bg-cover     border-l-0   flex w-max absolute top-5 left-0 rounded-r-lg   justify-start"
-              initial={{ opacity: 0, x: "-200px" }}
-              animate={{
-                opacity: 1,
-                x: "0px",
+            <>
+              <motion.div
+                className="p-2 bg-cover     border-l-0   flex w-max absolute top-5 left-0 rounded-r-lg   justify-start"
+                initial={{ opacity: 0, x: "-200px" }}
+                animate={{
+                  opacity: 1,
+                  x: "0px",
 
-                borderLeft: "0px",
-              }}
-              exit={{ opacity: 0, x: "-200px" }}
-              transition={{ duration: 0.4 }}
-            >
-              <p style={{ color: "#dd98fe" }}>NEW</p>
-            </motion.div>
+                  borderLeft: "0px",
+                }}
+                exit={{ opacity: 0, x: "-200px" }}
+                transition={{ duration: 0.4 }}
+              >
+                <p style={{ color: "#dd98fe" }}>NEW</p>
+              </motion.div>
+            </>
           )}
           {isHovered && (
             <motion.div
