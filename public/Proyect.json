@@ -157,7 +157,7 @@
             ],
             "github": "https://github.com/Valenti-Franco/NoteHud",
             "page1": {
-                "title": "NoteHUB: Juego de Preguntas Online",
+                "title": "NoteHUB: Plataforma de Notas",
                 "body": {
                     "part1": "La página web NoteWorld ofrece una plataforma donde los usuarios pueden iniciar sesión y gestionar sus notas de manera eficiente. Con NoteWorld, puedes crear, editar y archivar tus notas según tus necesidades. Ya sea que estés tomando apuntes para una reunión importante o simplemente organizando tus pensamientos, nuestra plataforma te ofrece las herramientas necesarias para mantener tus notas organizadas y accesibles en todo momento. Con una interfaz intuitiva y funcionalidades de edición versátiles, NoteWorld se adapta a tu estilo de trabajo, permitiéndote concentrarte en lo que realmente importa: tus ideas.",
                     "part2": "Además, NoteWorld garantiza la seguridad y privacidad de tus datos mediante un sistema de inicio de sesión seguro. Utilizando tecnologías modernas como JWT (JSON Web Tokens) para la autenticación, puedes confiar en que tus notas estarán protegidas mientras trabajas en la plataforma. Con NoteWorld, no solo obtienes un lugar conveniente para organizar tus pensamientos, sino también la tranquilidad de saber que tus datos están seguros y protegidos."
