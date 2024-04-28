@@ -168,7 +168,7 @@
         {
             "id": 6,
             "isNew": false,
-            "title": "FV Argento REMAKE",
+            "title": "FV Argento ",
             "type": "Sitio web deportivo",
             "subtitle": "Futbol Argentino",
             "logo": "../../img/fv3d.webp",
@@ -183,7 +183,7 @@
             "page1": {
                 "title": "Plataforma Fútbol",
                 "body": {
-                    "part1": "Bienvenido a FV Argento REMAKE, la plataforma definitiva para los fanáticos del fútbol argentino. Con ocho equipos icónicos, incluyendo Newell's, Central, San Lorenzo, Boca, River, Racing, Independiente y Estudiantes, este proyecto está diseñado con React y Three.js para una experiencia visualmente impresionante.",
+                    "part1": "Bienvenido a FV Argento, la plataforma definitiva para los fanáticos del fútbol argentino. Con ocho equipos icónicos, incluyendo Newell's, Central, San Lorenzo, Boca, River, Racing, Independiente y Estudiantes, este proyecto está diseñado con React y Three.js para una experiencia visualmente impresionante.",
                     "part2": "Explora las estadísticas de cada club y maravíllate con la representación en 3D de sus estadios. Sumérgete en el mundo del fútbol argentino como nunca antes, con FV Argento REMAKE, donde la pasión por el fútbol se une con la tecnología de vanguardia para una experiencia inolvidable."
                 },
                 "image1": "../../img/fvArgento1.webp"
