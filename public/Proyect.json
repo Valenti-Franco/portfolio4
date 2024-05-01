@@ -1,6 +1,36 @@
 {
     "proyects": [
         {
+            "id": 6,
+            "isNew": true,
+            "title": "FV Argento ",
+            "type": "Estadios en 3D",
+            "subtitle": "Futbol Argentino",
+            "logo": "../../img/fv3d.webp",
+            "link": "https://fv-futbol.vercel.app/",
+            "imagePhone": "../../img/3dCnacha.webp",
+            "imageWindow": "",
+            "teclogies": [
+                "Next",
+                "Css"
+            ],
+            "github": "https://github.com/Valenti-Franco/FV-Futblo",
+            "page1": {
+                "linkedin": {
+                    "link": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7190829631015424000",
+                    "title": "FV Argento",
+                    "heigth": "934",
+                    "width": "504"
+                },
+                "title": "Plataforma Fútbol",
+                "body": {
+                    "part1": "Bienvenido a FV Argento, la plataforma definitiva para los fanáticos del fútbol argentino. Con ocho equipos icónicos, incluyendo Newell's, Central, San Lorenzo, Boca, River, Racing, Independiente y Estudiantes, este proyecto está diseñado con React y Three.js para una experiencia visualmente impresionante.",
+                    "part2": "Explora las estadísticas de cada club y maravíllate con la representación en 3D de sus estadios. Sumérgete en el mundo del fútbol argentino como nunca antes, con FV Argento REMAKE, donde la pasión por el fútbol se une con la tecnología de vanguardia para una experiencia inolvidable."
+                },
+                "image1": "../../img/fvArgento1.webp"
+            }
+        },
+        {
             "id": 10,
             "isNew": true,
             "title": "FVSocial",
@@ -163,30 +193,6 @@
                     "part2": "Además, NoteWorld garantiza la seguridad y privacidad de tus datos mediante un sistema de inicio de sesión seguro. Utilizando tecnologías modernas como JWT (JSON Web Tokens) para la autenticación, puedes confiar en que tus notas estarán protegidas mientras trabajas en la plataforma. Con NoteWorld, no solo obtienes un lugar conveniente para organizar tus pensamientos, sino también la tranquilidad de saber que tus datos están seguros y protegidos."
                 },
                 "image1": "../../img/notehubImage1.webp"
-            }
-        },
-        {
-            "id": 6,
-            "isNew": false,
-            "title": "FV Argento ",
-            "type": "Sitio web deportivo",
-            "subtitle": "Futbol Argentino",
-            "logo": "../../img/fv3d.webp",
-            "link": "https://fv-futbol.vercel.app/",
-            "imagePhone": "../../img/3dCnacha.webp",
-            "imageWindow": "",
-            "teclogies": [
-                "Next",
-                "Css"
-            ],
-            "github": "https://github.com/Valenti-Franco/FV-Futblo",
-            "page1": {
-                "title": "Plataforma Fútbol",
-                "body": {
-                    "part1": "Bienvenido a FV Argento, la plataforma definitiva para los fanáticos del fútbol argentino. Con ocho equipos icónicos, incluyendo Newell's, Central, San Lorenzo, Boca, River, Racing, Independiente y Estudiantes, este proyecto está diseñado con React y Three.js para una experiencia visualmente impresionante.",
-                    "part2": "Explora las estadísticas de cada club y maravíllate con la representación en 3D de sus estadios. Sumérgete en el mundo del fútbol argentino como nunca antes, con FV Argento REMAKE, donde la pasión por el fútbol se une con la tecnología de vanguardia para una experiencia inolvidable."
-                },
-                "image1": "../../img/fvArgento1.webp"
             }
         },
         {
